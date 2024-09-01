@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";function e(t,o){const n=t.split(" ").slice(0,1).join().toLowerCase()[0],s=t.split(" ").slice(-1).join().toLowerCase(),r=s[s.length-1],c=o.split(" ").slice(0,1).join().toLowerCase()[0],l=o.split(" ").slice(-1).join().toLowerCase(),a=l[l.length-1];return n===c&&r===a}console.log(e("great blue heron","garlic naan"));console.log(e("chickadee","chocolate cake"));console.log(e("brown bear","bear claw"));
+//# sourceMappingURL=commonHelpers2.js.map
