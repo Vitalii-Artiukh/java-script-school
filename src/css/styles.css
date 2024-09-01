@@ -26,6 +26,12 @@
 
 @import url('./reset.css');
 
+.link {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: rgba(19, 18, 18, 0.3);
+}
+
 .iziToast-texts {
   width: 322px;
 }
