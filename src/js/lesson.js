@@ -2988,18 +2988,108 @@ function abbrevName(name) {
 
 ////////////////////////////////////////////
 
-function feast(beast, dish) {
-  const firstLetterBeast = beast.split(' ').slice(0, 1).join().toLowerCase()[0];
-  const lastLetterWord = beast.split(' ').slice(-1).join().toLowerCase();
-  const lastLetterBeast = lastLetterWord[lastLetterWord.length - 1];
+// function feast(beast, dish) {
+//   return beast[0] === dish[0] && beast.slice(-1) === dish.slice(-1);
 
-  const firstLetterDish = dish.split(' ').slice(0, 1).join().toLowerCase()[0];
-  const lastLetterWordDish = dish.split(' ').slice(-1).join().toLowerCase();
-  const lastLetterDish = lastLetterWordDish[lastLetterWordDish.length - 1];
-  return (
-    firstLetterBeast === firstLetterDish && lastLetterBeast === lastLetterDish
-  );
-}
-console.log(feast('great blue heron', 'garlic naan')); //, true);
-console.log(feast('chickadee', 'chocolate cake')); //, true);
-console.log(feast('brown bear', 'bear claw')); //, false);
+//   console.log(beast[0]);
+//   console.log(beast[beast.length - 1]);
+
+// return (
+//   beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+// );
+
+// const firstLetterBeast = beast.split(' ').slice(0, 1).join().toLowerCase()[0];
+// const lastLetterWord = beast.split(' ').slice(-1).join().toLowerCase();
+// const lastLetterBeast = lastLetterWord[lastLetterWord.length - 1];
+// const firstLetterDish = dish.split(' ').slice(0, 1).join().toLowerCase()[0];
+// const lastLetterWordDish = dish.split(' ').slice(-1).join().toLowerCase();
+// const lastLetterDish = lastLetterWordDish[lastLetterWordDish.length - 1];
+// return (
+//   firstLetterBeast === firstLetterDish && lastLetterBeast === lastLetterDish
+// );
+// }
+
+// console.log(feast('great blue heron', 'garlic naan')); //, true);
+// console.log(feast('chickadee', 'chocolate cake')); //, true);
+// console.log(feast('brown bear', 'bear claw')); //, false);
+
+////////////////////////////////////////////////////////////////////////
+
+// var isSquare = function (n) {
+//   console.log(Math.sqrt(n) % 1 === 0);
+
+//   return Number.isInteger(Math.sqrt(n));
+// };
+
+// console.log(isSquare(0)); //, true, '0 is a square number (0 * 0)');
+// console.log(isSquare(3)); //, false, '3 is not a square number');
+// console.log(isSquare(4)); //, true, '4 is a square number (2 * 2)');
+// console.log(isSquare(25)); //, true, '25 is a square number (5 * 5)');
+// console.log(isSquare(26)); //, false, '26 is not a square number');
+
+////////////////////////////////////////////
+
+// function countSheeps(sheep) {
+//   return sheep.filter(Boolean).length;
+
+//   // let sheeps = 0;
+//   // sheep.map(e => {
+//   //   if (e) {
+//   //     sheeps++;
+//   //   }
+//   // });
+//   // return sheeps;
+// }
+
+// console.log(countSheeps([]));
+// console.log(countSheeps([undefined])); //;[(, 0)], //, 0],
+// console.log(countSheeps([null])); //;, 0],
+// console.log(countSheeps([false])); //;, 0],
+// console.log(countSheeps([true])); //;, 1],
+// console.log(countSheeps([undefined, null, false, true])); //;, 1],
+// console.log(
+//   countSheeps([undefined, null, false, true, true, false, null, undefined])
+// ); //;, 2],
+// console.log(
+//   countSheeps([
+//     true,
+//     true,
+//     true,
+//     false,
+//     true,
+//     true,
+//     true,
+//     true,
+//     true,
+//     false,
+//     true,
+//     false,
+//     true,
+//     false,
+//     false,
+//     true,
+//     true,
+//     true,
+//     true,
+//     true,
+//     false,
+//     false,
+//     true,
+//     true,
+//   ])
+// ); //; 17,  ];
+
+//////////////////////////////////////////
+
+// function lovefunc(flower1, flower2) {
+//   return Boolean((flower1 - flower2) % 2);
+
+//   return (flower1 + flower2) % 2 > 0;
+// }
+
+// console.log(lovefunc(1, 4)); //, true);
+// console.log(lovefunc(2, 2)); //, false);
+// console.log(lovefunc(0, 1)); //, true);
+// console.log(lovefunc(0, 0)); //, false);
+
+////////////////////////////////////////
