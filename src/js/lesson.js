@@ -3093,3 +3093,34 @@ function abbrevName(name) {
 // console.log(lovefunc(0, 0)); //, false);
 
 ////////////////////////////////////////
+
+// function sum(numbers) {
+//   return numbers.reduce((a, b) => a + b, 0);
+
+//   // let summ = 0;
+//   // if ([numbers.length] === 0) {
+//   //   return 0;
+//   // }
+//   // numbers.map(n => {
+//   //   summ += n;
+//   // });
+//   // return summ;
+// }
+
+// console.log(sum([]));
+// console.log(sum([2, 3, 5]));
+// console.log(sum([1, 5.2, 4, 0, -1]));
+// console.log(sum([8, -3.8, 5.7]));
+
+////////////////////////////////////////////////
+
+// function highAndLow(numbers) {
+//   return `${Math.max(...numbers.split(' '))} ${Math.min(
+//     ...numbers.split(' ')
+//   )}`;
+// }
+
+// console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'));
+// console.log(highAndLow('1 2 3'));
+
+//////////////////////////////////////////////////
