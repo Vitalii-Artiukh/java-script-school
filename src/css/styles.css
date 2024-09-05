@@ -7,6 +7,7 @@
 @import url('./reset.css');
 @import url('simplelightbox/dist/simple-lightbox.min.css');
 @import url('izitoast/dist/css/iziToast.min.css');
+@import url('projects.css');
 
 :root {
   font-family: 'Montserrat', sans-serif;
